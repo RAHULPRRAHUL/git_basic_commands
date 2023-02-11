@@ -1,0 +1,96 @@
+#################
+
+one time configure your git account
+ use following command
+ 
+git config --global user.name "RAHULPRRAHUL"
+			or 
+git config --global user.email "adsda@gmail.com"
+
+
+#################
+
+step1: initialise git to your project
+git init
+
+
+step2: Create git repositorise from your git hub account
+
+
+Step3: choose the connection link between github repositorise and local git project by
+git remote add origin https://github.com/RAHULPRRAHUL/git_demo_1.git
+
+
+step4: commit changes with commnets and check stauts
+git commit -m "demo"
+git status
+
+
+step4: Push the changes to github repositorise for preticular branch
+git push origin master
+
+
+step5: sequence to update the git repositorise contents for master
+git add .
+git status
+git commit -m "demo2 update"
+git push origin master
+
+
+step6: check current branch name
+git branch
+
+
+step7: create new branch locally (when we create new branch content of master are directly available to new branch)
+git checkout -b demobranch2
+
+ 
+step8: change to desired branch
+git checkout master
+
+
+step9: sequence to update the git repositorise contents for new_branch
+git add .
+git status
+git commit -m "demo3 update"
+git push origin demobranch
+
+
+
+#####################################################
+
+hard reset works local commits (in case multiple commits which are present locally only not git repository)
+
+check log and based on local commints history choose one of them to move
+
+To view commits history
+git log or git reflog
+
+To move perticular commit points 
+git reset --hard 5c4f7f538c5c625e80a4aa527de246ce8f79af9a
+
+
+To push changes to git repository
+git push origin master
+
+#####################################################
+
+git fsck
+
+(dangling blobs which are remove by hard reset and only added to using (git add .) locally.
+
+retrive them by 
+
+git show dangling_id
+
+
+####################
+
+
+undo uncommited changes to local (reference to git repository)
+
+git checkout -- .
+
+git checkout -- file.txt
+
+

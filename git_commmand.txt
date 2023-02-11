@@ -1,0 +1,91 @@
+ mkdir gitdemo
+  682  cd gitdemo/
+  683  ll
+  684  git init
+  685  ll
+  686  cd .git/
+  687  ll
+  688  cat config
+  689  cd ..
+  690  git config --global user.name "waseem95git"
+  691  touch demo.py
+  692  git status
+  693  git add .
+  694  git status
+  695  git commit -m "demo"
+  696  git remote add origin https://github.com/waseem95git/w1.git
+  697  git branch
+  698  git push origin master
+  699  vi demo.py
+  700  git status
+  701  git commit -m "changes1"
+  702  git add .
+  703  git status
+  704  git commit -m "changes1"
+  705  git push origin master
+  706  git log
+  707  git reset --hard 5c4f7f538c5c625e80a4aa527de246ce8f79af9a
+  708  git status
+  709  vi demo.py
+  710  git status
+  711  git add .
+  712  git push origin master
+  713  git push -f origin master
+  714  git log
+  715  git checkout -b demobranch
+  716  git branch
+  717  git checkout -b demobranch2
+  718  git branch
+  719  ll
+  720  git push origin demobranch
+  721  git push origin demobranch2
+  722  git branch
+  723  git checkout master
+  724  git branch
+  725  touch master1.txt
+  726  git status
+  727  touch master2.txt
+  728  git status
+  729  git add master1.txt
+  730  git status
+  731  git commit -m "master1"
+  732  git push origin master
+  733  touch branch1.txt
+  734  touch branch2.txt
+  735  git branch
+  736  git checkout demobranch2
+  737  git branch
+  738  git statsu
+  739  git status
+  740  git add branch2.txt
+  741  git commit -m "bracnh 2"
+  742  git status
+  743  git bracnch
+  744  git branch
+  745  git add branch2.txt
+  746  git status
+  747  git push origin demobranch2
+  748  git branch
+  749  git checkout demobranch
+  750  git branch
+  751  git status
+  752  git add branch1.txt
+  753  git status
+  754  git commit -m "bracnh 1"
+  755  git push origin
+  756  git push origin demobranch
+  757  vi branch1.txt
+  758  git diff branch1.txt
+  759  git add branch1.txt
+  760  git diff branch1.txt
+  761  git commit -m "new cahnge"
+  762  git push origin demobranch
+  763  git log 
+  764  git diff dff8334aa844c30ddd338d287cdf5d2bfc4fc32b
+  765  git reset --hard dff8334aa844c30ddd338d287cdf5d2bfc4fc32b
+  766  git branch
+  767  git reset --hard 5c4f7f538c5c625e80a4aa527de246ce8f79af9a
+  768  git diff branch1.txt
+  769  vi branch1.txt
+  770  git log 
+
